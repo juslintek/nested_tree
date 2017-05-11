@@ -40,7 +40,7 @@ class Category extends InCategoryLevel
      * @return boolean
      */
     public function removeCategory() {
-        return Database::db()->exec("DELETE FROM tree WHERE id = $this->id");
+        return Database::db()->exec("DELETE FROM tree a INNER JOIN tree b ON a.id = b.parent WHERE id = $this->id");
     }
 
 
