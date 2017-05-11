@@ -1,3 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
 /vendor/
 /database/nested_categories.sqlite
+/.idea/
